@@ -5,11 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./assets/img/red.png" rel="icon" />
     <title>舊好生活藝術節</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       rel="stylesheet"
     />
+    <style>
+      /* Regular */
+      @font-face {
+        font-family: "LINESeed";
+        src: url("./assets/fonts/LINESeedSans_W_Rg.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+      }
+      /* Bold */
+      @font-face {
+        font-family: "LINESeed";
+        src: url("./assets/fonts/LINESeedSans_W_Bd.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+      }
+      /* Extra Bold */
+      @font-face {
+        font-family: "LINESeed";
+        src: url("./assets/fonts/LINESeedSans_W_Eb.ttf") format("truetype");
+        font-weight: 800;
+        font-style: normal;
+      }
+      /* Thin */
+      @font-face {
+        font-family: "LINESeed";
+        src: url("./assets/fonts/LINESeedTW_TTF_Th.ttf") format("truetype");
+        font-weight: 100;
+        font-style: normal;
+      }
+
+      /* 統一 class */
+      .font-line {
+        font-family: "LINESeed", sans-serif;
+      }
+    </style>
   </head>
   <body class="font-sans text-gray-800 bg-white-100">
     <!-- Preloader -->
@@ -32,7 +67,9 @@
       >
         <div class="flex items-center">
           <img src="./assets/img/yollow.png" alt="Logo" class="h-8 mr-2" />
-          <h1 class="text-2xl font-bold text-white">舊好生活藝術節</h1>
+          <h1 class="text-2xl font-line font-bold text-white">
+            <a href="#">舊好生活藝術節</a>
+          </h1>
         </div>
         <!-- Desktop Navigation -->
         <nav class="hidden lg:flex space-x-2 items-center">
@@ -139,7 +176,7 @@
             </p>
             <a
               href="https://docs.google.com/forms/d/1fYd13tan4NMKcT_yDplkiDxicIFv2FXscCyUm-_xJiI/edit?usp=forms_home&ouid=111440224178845343535"
-              class="inline-block px-8 py-3 border-2 border-red-500 text-gray-800 rounded-full hover:bg-red-500 hover:text-white transition"
+              class="font-bold inline-block px-8 py-3 border-2 border-red-500 text-gray-800 rounded-full hover:bg-red-500 hover:text-white transition"
               target="_blank"
               >立即報名</a
             >
@@ -156,12 +193,18 @@
           <p class="text-2xl font-bold text-gray-900">活動介紹</p>
         </div>
         <div class="space-y-6 text-lg">
-          <p>
+          <p class="font-extrabold">
             說到高雄辦桌，大家第一時間可能會想到內門的總鋪師，但在左營，也有一群深耕在地的總鋪師，默默延續著「年菜文化」的記憶。
           </p>
           <p>辦桌，不只是料理，更是一份人情、一段生活、一種地方的味道。</p>
           <p>
-            今年第一屆的「舊好生活藝術節」主視覺，我們邀請青荒工室操刀設計，將這份「左營味」融入展覽之中。
+            今年的「舊好生活藝術節」主視覺，我們邀請<a
+              class="text-red-600 font-bold"
+              href="https://www.instagram.com/koya_graphic/"
+              target="_blank"
+              title="青荒工室IG"
+              >青荒工室</a
+            >操刀設計，將這份「左營味」融入展覽之中。
           </p>
           <p>
             「舊好生活藝術節」將帶來策展式辦桌、市集與展覽，從永續設計、社區合作到在地文化，一起走進左營的舊城日常。
@@ -172,7 +215,7 @@
           </p>
           <a
             href="#"
-            class="inline-flex items-center px-6 py-3 bg-red-500 text-white rounded-md hover:bg-red-400 transition"
+            class="shadow-xl font-bold inline-flex items-center px-6 py-3 bg-red-500 text-white rounded-md hover:bg-red-400 transition"
             >即刻報名 <i class="fas fa-arrow-right ml-2"></i
           ></a>
         </div>
@@ -191,25 +234,25 @@
         <!-- Tabs Navigation -->
         <div class="flex flex-col sm:flex-row justify-center gap-2 mb-8">
           <button
-            class="tab-button bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-red-400 hover:text-white transition active:bg-red-500 active:text-white"
+            class="shadow-md font-bold tab-button bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-red-400 hover:text-white transition active:bg-red-500 active:text-white"
             data-tab="tab1"
           >
             台式辦桌
           </button>
           <button
-            class="tab-button bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-red-400 hover:text-white transition"
+            class="shadow-md font-bold tab-button bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-red-400 hover:text-white transition"
             data-tab="tab2"
           >
             手作DIY
           </button>
           <button
-            class="tab-button bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-red-400 hover:text-white transition"
+            class="shadow-md font-bold tab-button bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-red-400 hover:text-white transition"
             data-tab="tab3"
           >
             品牌展覽
           </button>
           <button
-            class="tab-button bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-red-400 hover:text-white transition"
+            class="shadow-md font-bold tab-button bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-red-400 hover:text-white transition "
             data-tab="tab4"
           >
             表演活動
@@ -227,16 +270,16 @@
               </p>
               <a
                 href="https://docs.google.com/forms/d/1fYd13tan4NMKcT_yDplkiDxicIFv2FXscCyUm-_xJiI/edit?usp=forms_home&ouid=111440224178845343535"
-                class="inline-block px-8 py-3 border-2 border-red-500 text-gray-800 rounded-md hover:bg-red-500 hover:text-white transition"
+                class="shaow-xl font-bold inline-block px-8 py-3 border-2 border-red-500 text-gray-800 rounded-md hover:bg-red-500 hover:text-white transition"
                 target="_blank"
                 >立即報名</a
               >
             </div>
-            <div>
+            <div class="mask-y-from-70% mask-y-to-90%">
               <img
                 src="./assets/img/e05cadb40c7dffff0fd5d85b5976ffb2.jpg"
                 alt="台式辦桌"
-                class="w-full h-64 lg:h-80 object-cover rounded-lg"
+                class="w-full h-64 lg:h-80 object-cover rounded-lg object-top object-cover"
               />
             </div>
           </div>
@@ -254,7 +297,7 @@
                 在手作過程中，體驗舊物新生的樂趣，與左營的人文故事共創獨一無二的節慶回憶。
               </p>
             </div>
-            <div>
+            <div >
               <img
                 src="./assets/img/diy_class.jpg"
                 alt="手作DIY"
@@ -274,7 +317,7 @@
                 品牌以NG水泥袋、建築廢棄玻璃與水庫淤泥打造再生產品，結合數位科技，實踐循環經濟與ESG責任，
                 減少碳排放並延長資源壽命。展覽呈現一年來的成果與在地社群合作計畫，透過設計美學與舊城故事，
                 展現廢棄與美好的共存可能。<br /><br />探索更多，請造訪<a
-                  class="text-red-500"
+                  class="font-bold text-red-500"
                   target="_blank"
                   href="https://www.reusenewlife.com.tw/"
                   >我們的網站</a
@@ -618,22 +661,22 @@
         </p>
         <div class="flex justify-center space-x-4 mb-6">
           <a
-            href="#"
+            href="https://www.youtube.com/@reducereuse2021/videos"
             class="w-10 h-10 flex items-center justify-center bg-red-500 text-white rounded-full hover:bg-red-400 transition"
             ><i class="fab fa-youtube"></i
           ></a>
           <a
-            href="#"
+            href="https://www.facebook.com/reducereuse2021"
             class="w-10 h-10 flex items-center justify-center bg-red-500 text-white rounded-full hover:bg-red-400 transition"
             ><i class="fab fa-facebook-f"></i
           ></a>
           <a
-            href="#"
+            href="https://www.instagram.com/reusenewlife/"
             class="w-10 h-10 flex items-center justify-center bg-red-500 text-white rounded-full hover:bg-red-400 transition"
             ><i class="fab fa-instagram"></i
           ></a>
           <a
-            href="#"
+            href="https://www.threads.com/@reusenewlife"
             class="w-10 h-10 flex items-center justify-center bg-red-500 text-white rounded-full hover:bg-red-400 transition"
             ><i class="fab fa-threads"></i
           ></a>
@@ -646,7 +689,6 @@
         </div>
       </div>
     </footer>
-
     <!-- Scroll Top Button -->
     <a
       href="#"
