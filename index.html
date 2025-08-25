@@ -49,7 +49,7 @@
       }
     </style>
   </head>
-  <body class="font-sans text-gray-800 bg-white-100">
+  <body class="font-sans text-gray-800 bg-white">
     <!-- Preloader -->
     <div
       id="preloader"
@@ -77,7 +77,7 @@
         <!-- Desktop Navigation -->
         <nav class="hidden lg:flex space-x-2 items-center">
           <a
-            href="#hero"
+            href="#header"
             class="font-bold text-black px-4 py-2 rounded-full hover:ring-2 ring-red-500 transition"
             >首頁</a
           >
@@ -112,7 +112,7 @@
           class="lg:hidden text-white text-2xl focus:outline-none"
           id="mobile-nav-toggle"
         >
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars text-red-500"></i>
         </button>
       </div>
       <!-- Mobile Navigation -->
@@ -166,24 +166,21 @@
     <!-- Hero Section -->
     <section
       id="hero"
-      class="min-h-[79vh] flex items-end justify-center mt-16
-         bg-[url(./assets/img/20250806_舊好生活藝術節_發檔-09.jpg)] 
-         bg-cover bg-center sm:bg-center md:bg-[center_top] lg:bg-center-top bg-no-repeat"
-    >
-    </section>
+      class="min-h-[79vh] flex items-end justify-center mt-16 bg-[url(./assets/img/20250806_舊好生活藝術節_發檔-09.jpg)] bg-cover bg-center sm:bg-center md:bg-[center_top] lg:bg-center-top bg-no-repeat"
+    ></section>
     <section class="-mt-10">
       <div class="container mx-auto px-4 text-center py-16">
         <div class="carousel-container">
           <div class="mb-8">
             <h2 class="text-4xl lg:text-5xl font-bold text-gray-900">
-              活動日期<br class="lg:hidden">2025年12月13日(六)
+              活動日期<br class="lg:hidden" />2025年12月13日(六)
             </h2>
             <p class="text-lg lg:text-xl max-w-3xl mx-auto my-6">
               左營舊城，是歲月留下的生活風景。舊好生活藝術節以「舊物不舊，生活有感」為策展主軸，從循環經濟、在地協作到日常美學，串聯左營舊城的記憶與未來。
             </p>
             <a
               href="https://docs.google.com/forms/d/1fYd13tan4NMKcT_yDplkiDxicIFv2FXscCyUm-_xJiI/edit?usp=forms_home&ouid=111440224178845343535"
-              class="font-bold inline-block px-8 py-3 border-2 border-red-500 text-gray-800 rounded-full hover:bg-red-500 hover:text-white transition  "
+              class="font-bold inline-block px-8 py-3 border-2 border-red-500 text-gray-800 rounded-full hover:bg-red-500 hover:text-white transition"
               target="_blank"
               >立即報名</a
             >
@@ -700,7 +697,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 text-center border-t border-gray-200 bg-blue-900">
+    <footer class="py-8 text-center border-t border-gray-200 bg-[#2c1ffe]">
       <div class="container mx-auto px-4">
         <h3 class="text-3xl font-bold mb-4 text-white">
           <a href="https://www.reusenewlife.com.tw/" target="_blank"
@@ -804,7 +801,6 @@
       });
 
       // Header Scroll Effect
-
 
       document.querySelectorAll(".tab-button").forEach((button) => {
         button.addEventListener("click", () => {
