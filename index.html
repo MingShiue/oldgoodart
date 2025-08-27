@@ -181,10 +181,20 @@
     </header>
 
     <!-- Hero Section -->
-    <section
-      id="hero"
-      class="min-h-[79vh] flex items-end justify-center mt-16 bg-[url(./assets/img/herosection.webp)] bg-cover bg-center sm:bg-center md:bg-[center_top] lg:bg-center-top bg-no-repeat"
-    ></section>
+    <section id="hero" class="relative min-h-[79vh] flex items-end justify-center mt-16 overflow-hidden">
+  <picture>
+    <!-- 手機版圖片 -->
+    <source srcset="./assets/img/mobilehero.png" media="(max-width: 768px)">
+    <!-- 桌機版圖片 -->
+    <img 
+      src="./assets/img/herosection.webp" 
+      alt="舊好生活藝術節" 
+      class="absolute inset-0 w-full h-full object-cover object-top"
+      loading="eager"
+      fetchpriority="high"
+    >
+  </picture>
+  </section>
     <section class="-mt-10">
       <div
         class="container mx-auto px-4 text-center py-16 bg-gradient-to-b from-white-100 to-gray-50"
