@@ -16,41 +16,7 @@
     <script type="module">
       import heroicons from "https://cdn.jsdelivr.net/npm/heroicons@2.2.0/+esm";
     </script>
-    <style>
-      /* Regular */
-      @font-face {
-        font-family: "LINESeed";
-        src: url("./assets/fonts/LINESeedSans_W_Rg.ttf") format("truetype");
-        font-weight: 400;
-        font-style: normal;
-      }
-      /* Bold */
-      @font-face {
-        font-family: "LINESeed";
-        src: url("./assets/fonts/LINESeedSans_W_Bd.ttf") format("truetype");
-        font-weight: 700;
-        font-style: normal;
-      }
-      /* Extra Bold */
-      @font-face {
-        font-family: "LINESeed";
-        src: url("./assets/fonts/LINESeedSans_W_Eb.ttf") format("truetype");
-        font-weight: 800;
-        font-style: normal;
-      }
-      /* Thin */
-      @font-face {
-        font-family: "LINESeed";
-        src: url("./assets/fonts/LINESeedTW_TTF_Th.ttf") format("truetype");
-        font-weight: 100;
-        font-style: normal;
-      }
 
-      /* 統一 class */
-      .font-line {
-        font-family: "LINESeed", sans-serif;
-      }
-    </style>
   </head>
   <body class="font-sans text-gray-800 bg-white">
     <!-- Preloader -->
@@ -129,7 +95,7 @@
       <!-- Mobile Navigation -->
       <div
         id="mobile-nav"
-        class="lg:hidden fixed inset-0 bg-gray-900 bg-opacity-80 z-40 transform translate-x-full transition-transform duration-300"
+        class="lg:hidden fixed inset-0 bg-gradient-to-r from-cyan-400 via-pruple-900 to-pink-400 bg-opacity-80 z-40 transform translate-x-full transition-transform duration-300"
       >
         <div class="flex justify-end p-4">
           <button
@@ -181,7 +147,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative min-h-[79vh] flex items-end justify-center mt-16 overflow-hidden">
+    <section id="hero" class="relative min-h-[85vh] flex items-end justify-center mt-16 overflow-hidden">
   <picture>
     <!-- 手機版圖片 -->
     <source srcset="./assets/img/mobilehero.png" media="(max-width: 768px)">
