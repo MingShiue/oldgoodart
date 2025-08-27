@@ -294,6 +294,7 @@
               <img
                 src="./assets/img/e05cadb40c7dffff0fd5d85b5976ffb2.jpg"
                 alt="台式辦桌"
+                loading="lazy"
                 class="w-full h-64 lg:h-80 object-cover rounded-lg object-top object-cover md:object-[center_25%]"
               />
             </div>
@@ -316,6 +317,7 @@
               <img
                 src="./assets/img/diy_class.jpg"
                 alt="手作DIY"
+                loading="lazy"
                 class="w-full h-64 lg:h-80 object-cover rounded-lg"
               />
             </div>
@@ -343,6 +345,7 @@
               <img
                 src="./assets/img/products.png"
                 alt="品牌展覽"
+                loading="lazy"
                 class="w-full h-64 lg:h-80 object-cover rounded-lg"
               />
             </div>
@@ -366,6 +369,7 @@
               <img
                 src="./assets/img/DJ_P.jpg"
                 alt="表演活動"
+                loading="lazy"
                 class="w-full h-64 lg:h-80 object-cover rounded-lg"
               />
             </div>
@@ -393,6 +397,7 @@
             <img
               src="./assets/img/Partners/杏福巷子.jpg"
               alt="杏福巷子"
+              loading="lazy"
               class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition"
             />
             <h3 class="text-lg font-bold mb-2">杏福巷子</h3>
@@ -410,6 +415,7 @@
             <img
               src="./assets/img/Partners/嚴記燒餅.png"
               alt="嚴記燒餅"
+              loading="lazy"
               class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition"
             />
             <h3 class="text-lg font-bold mb-2">嚴記燒餅</h3>
@@ -427,6 +433,7 @@
             <img
               src="./assets/img/Partners/曦玥珈琲.jpg"
               alt="曦玥珈琲"
+              loading="lazy"
               class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition"
             />
             <h3 class="text-lg font-bold mb-2">曦玥珈琲</h3>
@@ -444,6 +451,7 @@
             <img
               src="./assets/img/Partners/hoping.jpg"
               alt="厚皮咖啡"
+              loading="lazy"
               class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition"
             />
             <h3 class="text-lg font-bold mb-2">厚皮咖啡</h3>
@@ -461,6 +469,7 @@
             <img
               src="./assets/img/Partners/青荒工室.jpg"
               alt="青荒工室"
+              loading="lazy"
               class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition"
             />
             <h3 class="text-lg font-bold mb-2">青荒工室</h3>
@@ -478,6 +487,7 @@
             <img
               src="./assets/img/Partners/民生電氣.jpg"
               alt="民生電氣"
+              loading="lazy"
               class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition"
             />
             <h3 class="text-lg font-bold mb-2">民生電氣</h3>
@@ -495,6 +505,7 @@
             <img
               src="./assets/img/Partners/鑫鳴閣.jpg"
               alt="鑫鳴閣"
+              loading="lazy"
               class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition"
             />
             <h3 class="text-lg font-bold mb-2">鑫鳴閣</h3>
@@ -512,6 +523,7 @@
             <img
               src="./assets/img/Partners/S__29220868.jpg"
               alt="白鴿文創"
+              loading="lazy"
               class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition"
             />
             <h3 class="text-lg font-bold mb-2">白鴿文創</h3>
@@ -529,6 +541,7 @@
             <img
               src="./assets/img/Partners/佳皇紙業.jpg"
               alt="佳皇紙業"
+              loading="lazy"
               class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition"
             />
             <h3 class="text-lg font-bold mb-2">佳皇紙業</h3>
@@ -845,16 +858,18 @@
       ><i class="fas fa-arrow-up"></i
     ></a>
     <script>
-      // Remove Preloader on Page Load
-      window.addEventListener("load", () => {
+
+      // Remove Preloader as soon as DOM is ready
+      document.addEventListener("DOMContentLoaded", ()=>{
         const preloader = document.getElementById("preloader");
-        if (preloader) {
+        if(preloader){
           preloader.classList.add("hidden");
-          setTimeout(() => {
+          setTimeout(()=>{
             preloader.remove();
-          }, 500);
+          }, 500)
         }
-      });
+      })
+
 
       // Scroll Top Button
       const scrollTop = document.querySelector(".scroll-top");
