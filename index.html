@@ -7,7 +7,10 @@
     <title>舊好生活藝術節</title>
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
-    <meta name="descriptsion" content="舊好生活藝術節，提供藝術節相關資訊，有手作DIY活動，表演活動等" />
+    <meta
+      name="descriptsion"
+      content="舊好生活藝術節，提供藝術節相關資訊，有手作DIY活動，表演活動等"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -17,7 +20,9 @@
       import heroicons from "https://cdn.jsdelivr.net/npm/heroicons@2.2.0/+esm";
     </script>
   </head>
-  <body class="font-sans text-gray-800 bg-white">
+  <body
+    class="font-sans text-gray-800 bg-gradient-to-t from-yellow-200 to-yellow-100"
+  >
     <!-- Preloader -->
     <div
       id="preloader"
@@ -38,7 +43,10 @@
       >
         <div class="flex items-center">
           <a href="#"
-            ><img src="./assets/img/red.png" alt="舊好生活藝術節" class="h-10 mr-2"
+            ><img
+              src="./assets/img/red.png"
+              alt="舊好生活藝術節"
+              class="h-10 mr-2"
           /></a>
           <h1 class="text-2xl font-line font-bold text-black-200">
             <a href="#">舊好生活藝術節</a>
@@ -76,7 +84,7 @@
             class="font-bold text-black px-4 py-2 rounded-full hover:ring-2 ring-red-500 transition hover:scale-110"
             >聯絡我們</a
           >
-                <a
+          <a
             href="https://docs.google.com/forms/d/1fYd13tan4NMKcT_yDplkiDxicIFv2FXscCyUm-_xJiI/edit?usp=forms_home&ouid=111440224178845343535"
             class="font-bold text-black px-4 py-2 rounded-full hover:ring-2 ring-red-500 transition hover:scale-110"
             target="_blank"
@@ -146,27 +154,39 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative min-h-[85vh] flex items-end justify-center mt-16 overflow-hidden">
-  <picture>
-    <!-- 手機版圖片 -->
-    <source srcset="./assets/img/mobilehero.png" media="(max-width: 768px)">
-    <!-- 桌機版圖片 -->
-    <img 
-      src="./assets/img/herosection.webp" 
-      alt="舊好生活藝術節" 
-      class="absolute inset-0 w-full h-full object-cover object-top"
-      loading="eager"
-      fetchpriority="high"
+    <section
+      id="hero"
+      class="relative min-h-[79vh] flex items-end justify-center mt-16 overflow-hidden"
     >
-  </picture>
-  </section>
+      <picture>
+        <!-- 手機版圖片 -->
+        <source
+          srcset="./assets/img/mobilehero.png"
+          media="(max-width: 768px)"
+        />
+        <!-- 桌機版圖片 -->
+        <img
+          src="./assets/img/herosection.webp"
+          alt="舊好生活藝術節"
+          class="absolute inset-0 w-full h-full object-cover object-top"
+          loading="eager"
+          fetchpriority="high"
+        />
+      </picture>
+      <!-- <div class="absolute bottom-0 left-0 w-full h-[2px] bg-yellow-200 shadow-[0_0_10px_#fff085,0_0_20px_#fff086,0_0_30px_#fff087]"></div> -->
+    <div
+    class="absolute bottom-0 left-0 w-full h-[2px] bg-[#fff085] shadow-[0_0_8px_#fff085,0_0_15px_#fff085,0_0_30px_#fff085] animate-pulse"
+  ></div>
+    </section>
     <section class="-mt-10">
       <div
         class="container mx-auto px-4 text-center py-16 bg-gradient-to-b from-white-100 to-gray-50"
       >
         <div class="carousel-container">
           <div class="mb-8">
-            <h2 class="text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-300  via-red-300 to-indigo-300 ">
+            <h2
+              class="text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-300 via-red-300 to-indigo-300"
+            >
               活動日期<br class="lg:hidden" />2025年12月13日(六)
             </h2>
             <p class="text-lg lg:text-xl max-w-3xl mx-auto my-6">
@@ -191,21 +211,37 @@
           <p class="text-2xl font-bold text-gray-900">活動介紹</p>
         </div>
         <div class="space-y-6 text-lg">
-          <p>
-            「舊好生活」從日常出發，透過設計、合作與行動，串連人、土地與社區。我們以 永續X社區X故事 為核心，讓過去的智慧與當代創新融合，重新探索生活的可能。
-            <ul>在本屆藝術節中，將透過策展、市集與體驗，回應五大價值：
-              <li>社會｜凝聚社群，共創地方共好</li>
-              <li>文化｜設計翻譯，讓傳統被看見</li>
-              <li>經濟｜連結品牌，創造在地商機</li>
-              <li>環境｜倡導低碳與永續實踐</li>
-              <li>組織｜啟發企業思考文化與責任</li></ul>
-            <ul>今年特別規劃兩大展區：
-              <li>社區媽媽｜由在地媽媽以縫紉舊布、再生紙袋，將日常技能化為工藝，展現女性細膩力量與永續精神。</li>
-              <li>長者共學｜結合長照機構與社區，邀請長者口述左營故事，由新世代以繪畫轉化，讓地方記憶以藝術形式被延續。</li>
-            </ul>
-             「舊好生活藝術節」不僅是展覽，更是一場文化與生活的實驗。無論是一件再生作品、一段地方故事，或一次社區對話，我們邀請你一同思考：
-          </p>
-          <div class="flex align-center justify-center"><h1 class="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-400  via-yellow-400 to-indigo-400">什麼才是我們想要留下的生活？</h1></div>
+          「舊好生活」從日常出發，透過設計、合作與行動，串連人、土地與社區。我們以
+          永續 x 社區 x 故事
+          為核心，讓過去的智慧與當代創新融合，重新探索生活的可能。
+          <ul>
+            在本屆藝術節中，將透過策展、市集與體驗，回應五大價值：
+            <li>社會｜凝聚社群，共創地方共好</li>
+            <li>文化｜設計翻譯，讓傳統被看見</li>
+            <li>經濟｜連結品牌，創造在地商機</li>
+            <li>環境｜倡導低碳與永續實踐</li>
+            <li>組織｜啟發企業思考文化與責任</li>
+          </ul>
+          <ul>
+            今年特別規劃兩大展區：
+            <li>
+              社區媽媽｜由在地媽媽以縫紉舊布、再生紙袋，將日常技能化為工藝，展現女性細膩力量與永續精神。
+            </li>
+            <li>
+              長者共學｜結合長照機構與社區，邀請長者敘述左營故事或以繪畫轉化，讓地方記憶以藝術形式被延續。
+            </li>
+          </ul>
+          「舊好生活藝術節」不僅是展覽，更是一場文化與生活的實驗。無論是一件再生作品、一段地方故事，或一次社區對話，我們邀請你一同思考：
+          <div class="flex align-center justify-center">
+            <h1
+              class="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-yellow-400 to-indigo-400"
+            >
+              什麼才是我們想<br class="lg:hidden" /><spen
+                class="align-center justify-center"
+                >留下的生活？</spen
+              >
+            </h1>
+          </div>
         </div>
       </div>
     </section>
@@ -213,7 +249,7 @@
     <!-- Program Section -->
     <section id="program" class="py-16 bg-gray-50">
       <div class="container mx-auto px-2 max-w-4xl">
-        <div class="text-left mb-16 border-b-2 border-red-500 w-26 ">
+        <div class="text-left mb-16 border-b-2 border-red-500 w-26">
           <h2 class="text-sm uppercase text-gray-500 tracking-wider">
             Program
           </h2>
@@ -430,9 +466,7 @@
               class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition"
             />
             <h3 class="text-lg font-bold mb-2">厚皮咖啡</h3>
-            <p class="text-gray-600 text-sm">
-              被咖啡耽誤的甜點店!!
-            </p>
+            <p class="text-gray-600 text-sm">被咖啡耽誤的甜點店!!</p>
           </a>
 
           <a
@@ -466,9 +500,7 @@
               class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition"
             />
             <h3 class="text-lg font-bold mb-2">民生電氣</h3>
-            <p class="text-gray-600 text-sm">
-              關於日常的聲響，音樂即是民生。
-            </p>
+            <p class="text-gray-600 text-sm">關於日常的聲響，音樂即是民生。</p>
           </a>
 
           <a
@@ -484,9 +516,7 @@
               class="w-32 h-32 rounded-full mx-auto mb-4 object-cover hover:scale-110 transition"
             />
             <h3 class="text-lg font-bold mb-2">鑫鳴閣</h3>
-            <p class="text-gray-600 text-sm">
-              左營在地傳統八音北管團。
-            </p>
+            <p class="text-gray-600 text-sm">左營在地傳統八音北管團。</p>
           </a>
 
           <a
@@ -524,7 +554,6 @@
               佳皇保留傳承造紙產線的專業牛皮紙重包袋淋膜生產廠，友善環境落實循環經濟，並且具備靈活應變能力，滿足客戶需求。
             </p>
           </a>
-
         </div>
       </div>
     </section>
@@ -637,14 +666,16 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-4">
           <div class="space-y-22">
-            <div class="flex items-center bg-gradient-to-r from-red-100 via-purple-100 to-white-100 rounded-full">
+            <div
+              class="flex items-center bg-gradient-to-r from-red-100 via-purple-100 to-white-100 rounded-full"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1"
                 stroke="currentColor"
-                class="text-red-500  w-10 h-10 flex items-center justify-center ml-4 mr-3"
+                class="text-red-500 w-10 h-10 flex items-center justify-center ml-4 mr-3"
               >
                 <path
                   stroke-linecap="round"
@@ -663,14 +694,16 @@
                 <p class="text-sm text-gray-600">高雄市左營區左營下路45號</p>
               </div>
             </div>
-            <div class="flex items-center bg-gradient-to-r from-red-100 via-purple-100 to-white-100 rounded-full">
+            <div
+              class="flex items-center bg-gradient-to-r from-red-100 via-purple-100 to-white-100 rounded-full"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24 "
                 stroke-width="1"
                 stroke="currentColor"
-                class="text-red-500  w-10 h-10 flex items-center justify-center ml-4 mr-3"
+                class="text-red-500 w-10 h-10 flex items-center justify-center ml-4 mr-3"
               >
                 <path
                   stroke-linecap="round"
@@ -684,14 +717,16 @@
                 <p class="text-sm text-gray-600">07-5886589</p>
               </div>
             </div>
-            <div class="flex items-center bg-gradient-to-r from-red-100 via-purple-100 to-white-100 rounded-full">
+            <div
+              class="flex items-center bg-gradient-to-r from-red-100 via-purple-100 to-white-100 rounded-full"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1"
                 stroke="currentColor"
-                class="text-red-500  w-10 h-10 flex items-center justify-center ml-4 mr-3"
+                class="text-red-500 w-10 h-10 flex items-center justify-center ml-4 mr-3"
               >
                 <path
                   stroke-linecap="round"
@@ -721,7 +756,7 @@
               type="text"
               name="name"
               placeholder="姓名"
-              class="w-full p-3 mb-4 bg-gray-100 border border-gray-300 rounded-md focus:outline-none "
+              class="w-full p-3 mb-4 bg-gray-100 border border-gray-300 rounded-md focus:outline-none"
             />
             <input
               type="email"
@@ -779,7 +814,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 text-center border-b border-gray-200 bg-gradient-to-b from-gray-50 via-red-100 via-blue-100 to-cyan-100">
+    <footer
+      class="py-8 text-center border-b border-gray-200 bg-gradient-to-b from-gray-50 via-red-100 via-blue-100 to-cyan-100"
+    >
       <div class="container mx-auto px-4">
         <h3 class="text-3xl font-bold mb-4 text-black">
           <a href="https://www.reusenewlife.com.tw/" target="_blank"
@@ -833,18 +870,16 @@
       ><i class="fas fa-arrow-up"></i
     ></a>
     <script>
-
       // Remove Preloader as soon as DOM is ready
-      document.addEventListener("DOMContentLoaded", ()=>{
+      document.addEventListener("DOMContentLoaded", () => {
         const preloader = document.getElementById("preloader");
-        if(preloader){
+        if (preloader) {
           preloader.classList.add("hidden");
-          setTimeout(()=>{
+          setTimeout(() => {
             preloader.remove();
-          }, 500)
+          }, 500);
         }
-      })
-
+      });
 
       // Scroll Top Button
       const scrollTop = document.querySelector(".scroll-top");
